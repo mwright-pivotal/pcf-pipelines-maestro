@@ -25,7 +25,7 @@ export skip_ssl_verification=$MAIN_CONCOURSE_SKIP_SSL
 # prepare Concourse FLY cli in the task container (see ./tasks/maestro/scripts/tools.sh)
 prepareTools "$cc_url"
 
-loginConcourseTeam "$cc_url" "$cc_main_user" "$cc_main_pass" "home" "$skip_ssl_verification"
+loginConcourseTeam "$cc_url" "$cc_main_user" "$cc_main_pass" "main" "$skip_ssl_verification"
 
 # Process pipelines YAML patches that will apply to all foundations
 # See function definition in ./operations/operations.sh
